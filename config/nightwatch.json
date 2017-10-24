@@ -1,8 +1,11 @@
 {
-  "src_folders": ["./tests"],
+  "src_folders": ["./tests/features"],
   "output_folder": "./reports",
-  "custom_commands_path": [],
+  "custom_commands_path": [
+    "./tests/utils/commands"
+  ],
   "custom_assertions_path": [],
+  "page_objects_path": "./tests/pom",
   "globals_path": "",
   "test_workers": {
     "enabled": true,
@@ -19,7 +22,7 @@
 
   "test_settings": {
     "default": {
-      "launch_url": "http://localhost",
+      "launch_url": "https://secure.fr.vente-privee.com",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,
@@ -32,17 +35,6 @@
       "desiredCapabilities": {
         "browserName": "chrome"
       }
-    },
-
-    "chrome": {
-      "desiredCapabilities": {
-        "browserName": "chrome"
-      }
-    },
-    "firefox": {
-      "desiredCapabilities": {
-        "browserName": "firefox"
-      }
-    }
+    }    
   }
 }

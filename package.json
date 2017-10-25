@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch --config config/nightwatch.json"
+    "test": "nightwatch --config config/local.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nightwatch": "^0.9.16"
+    "cucumber": "^3.0.6",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^8.2.6"
   }
 }

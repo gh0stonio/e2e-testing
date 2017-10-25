@@ -12,7 +12,7 @@ module.exports = {
   globals_path: '',
   test_workers: {
     enabled: true,
-    workers: 2
+    workers: 5
   },
   selenium: {
     start_process: true,

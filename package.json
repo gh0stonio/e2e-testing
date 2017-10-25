@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch --config config/local.js"
+    "test:local": "nightwatch --config config/local.js",
+    "test:browserstack": "nightwatch --config config/browserstack.js --env ie9,edge16,safari10,chrome61"
   },
   "author": "",
   "license": "ISC",

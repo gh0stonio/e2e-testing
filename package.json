@@ -7,11 +7,22 @@
     "test:local": "nightwatch --config config/local.js",
     "test:browserstack": "nightwatch --config config/browserstack.js --env ie9,edge16,safari10,chrome61"
   },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cucumber": "^3.0.6",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^8.2.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.9.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4"
   }
 }

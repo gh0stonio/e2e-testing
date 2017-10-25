@@ -4,12 +4,11 @@ require('nightwatch-cucumber')({
 
 module.exports = {
   output_folder: './reports',
-  custom_commands_path: [
-    './tests/utils/commands'
-  ],
+  custom_commands_path: ['./tests/utils/commands'],
   custom_assertions_path: [],
   page_objects_path: './tests/pom',
   globals_path: '',
+  live_output: true,
   test_workers: {
     enabled: true,
     workers: 5
@@ -38,6 +37,6 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome'
       }
-    }    
+    }
   }
 }

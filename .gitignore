@@ -11,6 +11,11 @@ node_modules
 # MacOS
 .DS_Store
 
+# VS Code
+jsconfig.json
+.vscode/
+
+
 # NightWatch output
 reports
 screenshots

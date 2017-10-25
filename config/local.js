@@ -1,3 +1,6 @@
+const seleniumServer = require('selenium-server')
+const chromedriver = require('chromedriver')
+
 require('nightwatch-cucumber')({
   cucumberArgs: ['--require', 'tests/features/step_definitions', '--format', 'json:reports/cucumber.json', 'tests/features']
 })
@@ -15,10 +18,10 @@ module.exports = {
   },
   selenium: {
     start_process: true,
-    server_path: './bin/selenium-server-standalone-3.6.0.jar',
+    server_path: seleniumServer.path,
     port: 4444,
     cli_args: {
-      'webdriver.chrome.driver': './bin/drivers/chromedriver'
+      'webdriver.chrome.driver': chromedriver.driver
     }
   },
 

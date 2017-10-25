@@ -8,14 +8,19 @@
     "test:browserstack": "nightwatch --config config/browserstack.js --env ie9,edge16,safari10,chrome61"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chromedriver": "^2.33.2",
     "cucumber": "^3.0.6",
     "nightwatch": "^0.9.16",
-    "nightwatch-cucumber": "^8.2.6"
+    "nightwatch-cucumber": "^8.2.6",
+    "selenium-server": "^3.6.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",

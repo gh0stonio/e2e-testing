@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:local": "nightwatch --config config/local.js",
-    "test:browserstack": "nightwatch --config config/browserstack.js --env ie9,edge16,safari10,chrome61"
+    "test:browserstack": "bin/browserstack.js"
   },
   "lint-staged": {
     "*.js": [
@@ -16,11 +16,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chain-of-command": "^0.0.1",
     "chromedriver": "^2.33.2",
     "cucumber": "^3.0.6",
+    "jsonfile": "^4.0.0",
+    "moment": "^2.19.1",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^8.2.6",
-    "selenium-server": "^3.6.0"
+    "progress": "^2.0.0",
+    "selenium-server": "^3.6.0",
+    "superagent-sync": "^0.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",

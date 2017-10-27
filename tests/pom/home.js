@@ -8,7 +8,7 @@ module.exports = {
   commands: [
     {
       logoShouldBeVisible: function() {
-        return this.waitForElementVisible('@logo', 3000)
+        return this.waitForElementVisible('@logo', 100)
       }
     }
   ]
